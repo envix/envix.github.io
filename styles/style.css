@@ -33,18 +33,15 @@ caption,th {
 }
 h1,h2,h3,h4,h5,h6 {
     font-weight: normal;
-    font-size: 100%;
     margin:0;
     padding:0;
     color: rgba(184, 186, 228, 1);
 }
 
 .section h1 {
-    width: 400px;
+    width: auto;
     margin-top: -100px;
-    font-size: 50px;
     text-shadow: 4px 4px black;
-    left: 0.1%;
 }
 .section { 
     color: #d4d4d4;;
@@ -59,8 +56,13 @@ abbr,acronym { border: 0;
 
 /* Custom CSS
  * --------------------------------------- */
+html {
+    font-size: 100%;
+}
+
 body{
 	font-family: Tahoma,arial,helvetica;
+    font-size: 1em;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -88,7 +90,6 @@ body{
     position: absolute;
     width: 200px;
     margin-left: 100px;
-    font-size: 70%;
     top: 30px;
 }
 #main_title h1 {
@@ -96,13 +97,10 @@ body{
     font-size: 20px;
 }
 #main_title h2 {
-        color: grey;
-        margin-top: -15px;
-        font-size: 10px;
-    }
-#main_title {
-    font-size: 9px;
-} 
+    color: grey;
+    margin-top: -15px;
+    font-size: 10px;
+}
 
 #logo {
     position: absolute;
@@ -121,25 +119,26 @@ body{
     border: 5px solid rgba(161, 161, 226, .4);
 }
 
-.title_container h1 {
-    font-size: 5em !important;
-}
-.title_container .intro p {
-    font-size: 2em !important;
-}
-#title_container0 h1 {
-    font-size: 70px;
-}
 #title_container1 h1 {
-    margin-top: -50px;
-    width: 100%;
+    margin-top: -50px !important;
+}
+
+.title_container h1 {
+    font-size: 48px;
+    width: 100% !important;
 }
 .title_container p {
     position: relative;
-    font-size: 14px;
-    height: 100%;
+    height: auto !important;
     width: 100% !important;
     display: inline-block;
+}
+.title_container .intro p {
+    font-size: 20px;
+}
+.page_description p {
+    font-size: 16px;
+    padding: 5px 0 5px 0;
 }
 
 .page_container {
@@ -152,7 +151,6 @@ body{
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 5em !important;
 }
 
 #resume {
@@ -174,15 +172,15 @@ body{
 /*SLIDE TEXT*/
 .slide {
     margin-top: -300px;
+    position: relative;
+    height: auto !important;
 }
 
 .slide .intro{
-    position: relative;
     text-align: center;
     width: 70% !important;
     margin: 0 auto;
-    font-size: 1.7em !important;
-    margin-top:  !important;
+    top: 10px !important;
 }
 
 .intro ul {
@@ -192,7 +190,7 @@ body{
 }
 
 .slide .intro p {
-    font-size: 2em !important;
+    font-size: 36px;
     width: 100% !important;
 }
 
@@ -200,9 +198,30 @@ body{
     display: inline-block;
     color: #c9c9c9;
     padding: 2%;
+    font-size: 20px !important;
+}
+/*RESPONSIVE -SMALL SCREEN (vertical)*/
+@media screen and (max-height: 700px) {
+    
+    #title_container1 {
+        position: relative !important;
+        display: block;
+        float: left;
+        width: 50%;
+    }
+    .slide {
+        position: relative;
+        display: block;
+        float: right;
+        font-size: 12px !important;
+        top: 100px !important;
+    }
 }
 
-/*RESPONSIVE - SMALL SCREEN*/
+/*RESPONSIVE - SMALL SCREEN (horizontal)*/
+@media screen and (max-width: 600px) {
+}
+
 @media screen and (max-width: 900px) {
     #fullpage_container {
         margin-top: 177px;
@@ -220,18 +239,13 @@ body{
         margin-left: 90px;
         display: block;
     }
-    .title_container .intro p {
-        font-size: 2.3em !important;
-    }
     #main_title h1, h2 {
         width: 100px;
         float: right;
         display: block;
     }
     #main_title h2 {
-        color: grey;
         margin-top: 5px;
-        font-size: 10px;
     }
     #logo {
         display: block;
@@ -249,15 +263,13 @@ body{
     
     #header {height: 120px !important;}
     
-    #home_description {
-    margin-top: 20px;
-    width: 80%;
+    .section {
+        font-size: 90%;
     }
     
-    .slide p{
-    font-size: 2em !important;
+    .slide li {
+       font-size: 14px !important;
     }
-    
     
     }
     nav {
