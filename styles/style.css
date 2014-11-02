@@ -46,8 +46,8 @@ h1,h2,h3,h4,h5,h6 {
     text-shadow: 4px 4px black;
     left: 0.1%;
 }
-.section p { 
-    color: #d4d4d4; 
+.section { 
+    color: #d4d4d4;;
 }
 
 q:before,q:after {
@@ -125,7 +125,7 @@ body{
     font-size: 5em !important;
 }
 .title_container .intro p {
-    font-size: 1.5em !important;
+    font-size: 2em !important;
 }
 #title_container0 h1 {
     font-size: 70px;
@@ -135,8 +135,10 @@ body{
     width: 100%;
 }
 .title_container p {
-    font-size: 14px;
     position: relative;
+    font-size: 14px;
+    height: 100%;
+    width: 100% !important;
     display: inline-block;
 }
 
@@ -147,9 +149,10 @@ body{
 }
 
 .page_description {
-    margin-top: 20px;
+    position: relative;
     width: 100%;
-    font-size: .6em !important;
+    height: 100%;
+    font-size: 5em !important;
 }
 
 #resume {
@@ -169,13 +172,17 @@ body{
 }
 
 /*SLIDE TEXT*/
+.slide {
+    margin-top: -300px;
+}
+
 .slide .intro{
     position: relative;
     text-align: center;
-    height: 70% !important;
-    width: 100% !important;
-    font-size: 1em !important;
-    margin-top: -150px !important;
+    width: 70% !important;
+    margin: 0 auto;
+    font-size: 1.7em !important;
+    margin-top:  !important;
 }
 
 .intro ul {
@@ -185,7 +192,8 @@ body{
 }
 
 .slide .intro p {
-    font-size: 1.5em !important;
+    font-size: 2em !important;
+    width: 100% !important;
 }
 
 .intro li {
@@ -211,6 +219,9 @@ body{
         width: 150px;
         margin-left: 90px;
         display: block;
+    }
+    .title_container .intro p {
+        font-size: 2.3em !important;
     }
     #main_title h1, h2 {
         width: 100px;
@@ -240,7 +251,6 @@ body{
     
     #home_description {
     margin-top: 20px;
-    font-size: .8em !important;
     width: 80%;
     }
     
