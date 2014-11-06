@@ -61,7 +61,7 @@ html, body {
 .fp-controlArrow {
     position: absolute;
     z-index: 4;
-    top: 400px;
+    top: 52%;
     cursor: pointer;
     width: 0;
     height: 0;
@@ -69,13 +69,13 @@ html, body {
     margin-top: -35px;
 }
 .fp-controlArrow.fp-prev {
-    left: 5px;
+    left: 0;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 5px !important;
+    right: 0;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
@@ -169,18 +169,26 @@ html, body {
     left: 20px;
 }
 
-/*RESPONSIVE -SMALL SCREEN (vertical)*/
+/*RESPONSIVE - SUPER SUPER SMALL SCREEN (horizontal)*/
+@media screen and (max-width: 415px) {
+    .fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 55%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -35px;
+}
+}
+
+/*RESPONSIVE - SMALL SCREEN (vertical)*/
 @media screen and (max-height: 700px) {
-    
     .fp-controlArrow.fp-prev {
-        left: 51% !important;
-        top: 25% !important;
+        left: 50% ;
     }
-    .fp-controlArrow.fp-next {
-        right: 3%;
-        top: 25% !important;
+    .fp-controlArrow {
+        top: 20% ;
     }
-    .fp-slides {
-        width: 500px; 
-        left: 5% !important;
-    }
+}
