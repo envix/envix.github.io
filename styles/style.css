@@ -72,6 +72,10 @@ body{
     background: url('../images/bg.png') fixed;
 }
 
+#header {
+   font-size: 60%; 
+}
+
 #fullpage_container {
     margin-left: 5%;
     margin-right: 5%;
@@ -92,10 +96,10 @@ body{
 #main_title {
     position: absolute;
     width: 200px;
-    top: 25% !important;
-    left: 15%;
-    font-size: 50%;
+    left: 14%;
+    font-size: 80%;
 }
+
 #main_title h1 {
     color: rgba(184, 186, 228, 1) !important;
 }
@@ -111,7 +115,7 @@ body{
     background: radial-gradient(rgba(161, 161, 226, 0.3), rgba(0, 0, 0, .8));
     border: 5px solid rgba(161, 161, 226, .3);
     border-radius: 50%;
-    top: 5%;
+    top: 12%;
     left: 5%;
     display: block;
 }
@@ -172,10 +176,8 @@ body{
 
 /*SLIDE TEXT*/
 .slide {
-    margin-top: -300px;
     position: relative;
-    height: auto !important;
-    bottom: 40px;
+    bottom: 45%;
 }
 
 .slide .intro p, .slide .intro ul{
@@ -213,36 +215,30 @@ body{
         width: 50%;
     }
     .slide {
-        position: relative;
-        display: block;
-        float: right;
-        top: 100px !important;
     }
 }
 
 /*RESPONSIVE - SMALL SCREEN (horizontal)*/
 @media screen and (max-width: 1000px) {
     #fullpage_container {
-        margin-top: 177px;
+        margin-top: 140px;
     }
-    nav { width: 250px !important; margin-right: 10px; top: 15px !important;}
+    nav { width: 250px !important; margin-right: 10px; top: -5px !important;}
     nav a.nav {
         position: relative;
-        margin: 0 5px 5px 5px;
+        margin: 0 3px 6px 3px;
         display: block;
-        padding: 5px 8px 8px 5px;
-        font-size: 115%;
+        padding: 8px 8px 8px 8px;
     }
     #main_title {
-        left: 25%;
-        top: 21%;
+        left: 20%;
+        font-size: 60% !important;
     }
     #logo {
         display: block;
-        margin-top: 10px;
         padding-bottom: 0px;
-        height: 120px;
-        width: 120px;
+        height: 80px;
+        width: 80px;
     }
     #logo:hover {
     cursor: pointer;
@@ -250,7 +246,7 @@ body{
     border: 5px solid rgba(161, 161, 226, .4);
     }
     
-    #header {height: 120px !important;}
+    #header {height: 80px !important; font-size: 75%;}
     
     .section {
     }
@@ -261,39 +257,48 @@ body{
 @media screen and (max-width: 640px) {
     body { font-size: 65% !important; }
     #main_title {
-        left: 35% !important;
-        width: 100px;
+        left: 22%;
+        width: 150px !important;
+        height: 80px;
         display: block;
     }
     #main_title h1, h2 {
-        width: 100px;
+        width: 100%;
         float: right;
         display: block;
     }
     #main_title h2 {
         margin-top: 5px;
+        width: 100%;
     }
     
     nav {
-        width: 123px !important;
-        font-size: 75%;
-        margin: -20px auto !important;
+        width: 250px !important;
+        margin: 0px -2%;
+        font-size: 150%;
     }
-    
-    .slide { top: 0 !important;}
     
 }
 
 /*RESPONSIVE - SUPER SUPER SMALL SCREEN (horizontal)*/
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 530px) {
     #logo { display: none !important; }
-    #main_title { left: 5% !important; }
-    body { font-size: 60% !important;}
-    
+    #main_title { left: 25px !important;}
+    body { font-size: 65% !important;}
+    nav { font-size: 50%}
     .slide .intro {
         margin: 0 auto !important;
         width: 75% ;
     }
+}
+
+/*RESPONSIVE - SUPER  SUPER SUPER SMALL SCREEN (horizontal)*/
+@media screen and (max-width: 440px) {
+    body { margin-top: 70px}
+    #logo { display: none !important;}
+    #main_title {font-size: 80% !important; display: block; position: relative; height: 40%; margin-bottom: 10px; margin: 0 37px 10px;}
+    nav { display: block; position: relative; width: 245px !important; margin: 10px auto !important; font-size: 150%}
+    #header { height: 155px !important;}
 }
 
 
@@ -304,8 +309,8 @@ nav {
     float: right;
     text-align: center;
     z-index: 3000;
-    top: 20%;
     right: 5%;
+    font-size: 150%;
 }
 a.nav{
     float: left;

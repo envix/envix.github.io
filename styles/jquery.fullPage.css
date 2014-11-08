@@ -186,9 +186,9 @@ html, body {
 /*RESPONSIVE - SMALL SCREEN (vertical)*/
 @media screen and (max-height: 700px) {
     .fp-controlArrow.fp-prev {
-        left: 50% ;
+        left: 50% 
     }
     .fp-controlArrow {
-        top: 20% ;
+        top: 25% ;
     }
 }
