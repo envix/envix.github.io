@@ -232,7 +232,7 @@ body{
     }
     #main_title {
         left: 20%;
-        font-size: 60% !important;
+        font-size: 65% !important;
     }
     #logo {
         display: block;
@@ -296,8 +296,8 @@ body{
 @media screen and (max-width: 440px) {
     body { margin-top: 70px}
     #logo { display: none !important;}
-    #main_title {font-size: 80% !important; display: block; position: relative; height: 40%; margin-bottom: 10px; margin: 0 37px 10px;}
-    nav { display: block; position: relative; width: 245px !important; margin: 10px auto !important; font-size: 150%}
+    #main_title {font-size: 80% !important; margin: 0 auto !important; width: 100% !important; margin-left: -25px !important; display: block; position: relative; height: 40%; margin-bottom: 10px; margin: 0 37px 0 105px;}
+    nav { margin: 10px auto !important;}
     #header { height: 155px !important;}
 }
 
