@@ -115,7 +115,7 @@ body{
     background: radial-gradient(rgba(161, 161, 226, 0.3), rgba(0, 0, 0, .8));
     border: 5px solid rgba(161, 161, 226, .3);
     border-radius: 50%;
-    top: 12%;
+    top: 7%;
     left: 5%;
     display: block;
 }
@@ -207,14 +207,22 @@ body{
 }
 /*RESPONSIVE -SMALL SCREEN (vertical)*/
 @media screen and (max-height: 700px) {
-    
     #title_container1 {
         position: relative !important;
         display: block;
         float: left;
         width: 50%;
     }
-    .slide {
+    nav a{
+        height: 28px !important;
+        font-size: 20px !important;
+        width: 100px !important;
+    }
+    #main_title {
+        font-size: 10px !important;
+    }
+    .page_description {
+        font-size: 18px !important;
     }
 }
 
@@ -223,7 +231,7 @@ body{
     #fullpage_container {
         margin-top: 140px;
     }
-    nav { width: 250px !important; margin-right: 10px; top: -5px !important;}
+    nav { width: 250px !important; margin-right: 10px; top: -5px !important; font-size: 150% !important;}
     nav a.nav {
         position: relative;
         margin: 0 3px 6px 3px;
@@ -299,8 +307,17 @@ body{
     #main_title {font-size: 80% !important; margin: 0 auto !important; width: 100% !important; margin-left: -25px !important; display: block; position: relative; height: 40%; margin-bottom: 10px; margin: 0 37px 0 105px;}
     nav { margin: 10px auto !important;}
     #header { height: 155px !important;}
+    .page_description { font-size: 89%;}
+    .slide p { font-size: 180% !important;}
 }
 
+/*slide SSS small screen (horizontal)*/
+@media screen and (max-width: 340px) {
+    .slide {
+        font-size: 60% !important;
+        margin-top: -30px !important;
+    }
+}
 
 nav {
     position: relative;
@@ -310,7 +327,7 @@ nav {
     text-align: center;
     z-index: 3000;
     right: 5%;
-    font-size: 150%;
+    font-size: 200%;
 }
 a.nav{
     float: left;
