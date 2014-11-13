@@ -1,10 +1,4 @@
-/**
- * fullPage 2.1.9
- * https://github.com/alvarotrigo/fullPage.js
- * MIT licensed
- *
- * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
- */
+/* https://github.com/alvarotrigo/fullPage.js */
 html, body {
     margin: 0;
     padding: 0;
@@ -141,7 +135,7 @@ html, body {
 .fp-slidesNav .active span {
     background: #333;
 }
-#fp-nav span,
+#fp-nav span, 
 .fp-slidesNav span {
     top: 2px;
     left: 2px;
@@ -180,15 +174,15 @@ html, body {
     height: 0;
     border-style: solid;
     margin-top: -35px;
-}
+    }
 }
 
 /*RESPONSIVE - SMALL SCREEN (vertical)*/
 @media screen and (max-height: 700px) {
     .fp-controlArrow.fp-prev {
-        left: 50% 
+        left: 50%;
     }
     .fp-controlArrow {
-        top: 25% ;
+        top: 25%;
     }
 }
