@@ -52,7 +52,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .section { 
-    color: #d4d4d4;;
+    color: #d4d4d4;
 }
 abbr,acronym { border: 0;
 }
@@ -77,13 +77,14 @@ body{
 }
 
 #header {
-   font-size: 60%;
+    font-size: 60%;
+    padding-bottom: 20px;
 }
 
 #fullpage_container {
     margin-left: 5%;
     margin-right: 5%;
-    margin-top: 125px;
+    margin-top: 130px;
     overflow: hidden;
 }
 
@@ -170,7 +171,7 @@ body{
     height: 100% !important;
     width: 150px !important;
     text-align: center;
-    font-size: 13px;
+    font-size: 16px;
     z-index: 999;
     margin: 0 auto;
 }
@@ -184,8 +185,8 @@ body{
     position: relative;
     bottom: 45%;
 }
-
-.slide .intro p, .slide .intro ul{
+    
+.slide .intro p, .slide .intro ul {
     text-align: center;
     width: 80% !important;
     margin: 0 auto;
@@ -201,7 +202,7 @@ body{
 }
 
 .slide .intro p {
-    width: 100% !important;
+    width: 90% !important;
     font-size: 200%;
 }
 
@@ -212,11 +213,11 @@ body{
 }
 /*RESPONSIVE - SMALL SCREEN (vertical)*/
 @media screen and (max-height: 700px) {
-    #title_container1 {
+    #resume_description, #services_description {
         position: relative !important;
         display: block;
         float: left;
-        width: 50%;
+        width: 50% !important;
     }
     nav a{
         height: 28px !important;
@@ -226,15 +227,13 @@ body{
     #main_title {
         font-size: 10px !important;
     }
-    .page_description {
-        font-size: 18px !important;
-        width: 99%;
-    }
+    #title_container2 .intro a {float: right; margin-right: 50px !important;}
+    .slide .intro {font-size: 90%;}
 }
 
 /*RESPONSIVE - SUPER SMALL SCREEN (vertical)*/
 @media screen and (max-height: 550px) {
-    .slide {
+    .slide .intro {
         font-size: 110%;
     }
 }
@@ -254,6 +253,7 @@ body{
     #main_title {
         left: 20%;
         font-size: 65% !important;
+        width: 200px !important;
     }
     #logo {
         display: block;
@@ -267,8 +267,10 @@ body{
     border: 5px solid rgba(161, 161, 226, .4);
     }
     
-    #header {height: 80px !important; font-size: 75%;}
-    
+    #header {height: 80px !important; font-size: 75%; padding-bottom: 30px !important;}
+    #fullpage_container {
+        margin-top: 150px !important;
+    }   
 }
 
 /*RESPONSIVE - SUPER SMALL SCREEN (horizontal)*/
