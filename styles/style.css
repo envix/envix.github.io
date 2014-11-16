@@ -76,9 +76,13 @@ body{
     background: url('../images/bg.png') fixed;
 }
 
+nav {
+    font-size: 22px;
+}
+
 #header {
     font-size: 60%;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 #fullpage_container {
@@ -102,14 +106,14 @@ body{
     position: absolute;
     width: 200px;
     left: 14%;
-    font-size: 80%;
+    font-size: 10px;
 }
 
 #main_title h1 {
     color: rgba(184, 186, 228, 1) !important;
 }
 #main_title h2 {
-    color: grey;
+    color: #a0a0a0;
     margin-top: -15px;
 }
 
@@ -203,7 +207,7 @@ body{
 
 .slide .intro p {
     width: 90% !important;
-    font-size: 200%;
+    font-size: 190%;
 }
 
 .intro li {
@@ -221,11 +225,10 @@ body{
     }
     nav a{
         height: 28px !important;
-        font-size: 20px !important;
         width: 100px !important;
     }
     #main_title {
-        font-size: 10px !important;
+        font-size: 10px;
     }
     #title_container2 .intro a {float: right; margin-right: 50px !important;}
     .slide .intro {font-size: 90%;}
@@ -249,10 +252,10 @@ body{
         margin: 0 3px 6px 3px;
         display: block;
         padding: 8px 8px 8px 8px;
+        font-size: 20px;
     }
     #main_title {
         left: 20%;
-        font-size: 65% !important;
         width: 200px !important;
     }
     #logo {
@@ -359,7 +362,6 @@ nav {
     text-align: center;
     z-index: 3000;
     right: 5%;
-    font-size: 190%;
 }
 a.nav{
     float: left;
