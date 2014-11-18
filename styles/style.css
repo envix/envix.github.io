@@ -380,6 +380,19 @@ a.nav:hover{
     color: rgba(184, 186, 228, 1);
 }
 
+#title_container3 h1, #title_container3 .intro {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+}
+
+#contact-form {
+    width: 500px;
+    float: right;
+    display: inline-block;
+    position: relative;
+}
+
 /* Demos Menu
  * --------------------------------------- */
  #demosMenu{
